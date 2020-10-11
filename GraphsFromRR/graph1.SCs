@@ -1,0 +1,10 @@
+graph->G0;;
+G0->rrel_arcs:..arcs;;
+G0->rrel_nodes:..nodes;;
+
+..nodes->V0;;
+..nodes->V1;;
+..nodes->V2;;
+
+arcs->(V0<=>V1);;
+arcs->(V1<=>V3);;
