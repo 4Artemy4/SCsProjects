@@ -1,6 +1,6 @@
 graph->G5;;
-G4->rrel_arcs:..arcs;;
-G4->rrel_nodes:..nodes;;
+G5->rrel_arcs:..arcs;;
+G5->rrel_nodes:..nodes;;
 
 ..nodes->V0;;
 ..nodes->V1;;
