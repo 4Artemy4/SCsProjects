@@ -1,0 +1,24 @@
+<?xml version="1.0"  encoding="windows-1251"?>
+
+<GWF version="1.6">
+<staticSector>
+<node type="node/var/general_node" x="207" y="263" idtf="" id="151327096" shapeColor="16728128" text_angle="0" text_font="Times New Roman" font_size="12" show_content="false" parent="148670500" haveBus="false">
+<content type="0" mime_type="content/base" file_name="">
+</content>
+</node>
+<node type="node/const/nopredmet" x="208" y="181" idtf="Предметная область теории чисел" id="153957608" shapeColor="16728128" left="215" top="178.141" right="483.216" bottom="197.859" textColor="8421631" text_angle="0" text_font="Times New Roman" font_size="12" show_content="false" parent="148670500" haveBus="false">
+<content type="0" mime_type="content/base" file_name="">
+</content>
+</node>
+<arc type="arc/var/pos" idtf="" id_b="153957608" id_e="151327096" id="154370952" parent="148670500" shapeColor="16744576" b_x="207.915" b_y="187.999" e_x="207.085" e_y="256.001" dotBBalance="0" dotEBalance="0">
+<points/>
+</arc>
+<node type="node/const/general_node" x="268" y="216" idtf="бинарное отношение" id="141549432" shapeColor="16728128" left="275" top="213.141" right="437.294" bottom="232.859" textColor="8421631" text_angle="0" text_font="Times New Roman" font_size="12" show_content="false" parent="148670500" haveBus="false">
+<content type="0" mime_type="content/base" file_name="">
+</content>
+</node>
+<arc type="arc/var/pos" idtf="" id_b="141549432" id_e="151327096" id="148643504" parent="148670500" shapeColor="16744576" b_x="262.455" b_y="220.272" e_x="212.545" e_y="258.728" dotBBalance="0" dotEBalance="0">
+<points/>
+</arc>
+</staticSector>
+</GWF>
