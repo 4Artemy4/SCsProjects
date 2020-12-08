@@ -41,7 +41,7 @@ rhombus(A,B,C,D) => rrel_vertex:A; B; C; D; nrel_side:BC; nrel_height: DK; nrel_
 rhombus(A,B,C,D) -> K;M;;
 
 temp_const_node1 -> K;;
-temp_tuple4 -> BC; DK;
+temp_tuple4 -> BC; DK;;
 
 len_MK -> temp_tuple1;;
 temp_tuple1 -> 13;;
