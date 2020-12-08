@@ -1,4 +1,4 @@
-math = [
+math = [*
 
 sc_node_not_relation -> concept_point;;
 sc_node_not_relation -> concept_section;;
