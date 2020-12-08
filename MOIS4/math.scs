@@ -46,6 +46,5 @@ temp_tuple4 -> BC; DK;
 len_MK -> temp_tuple1;;
 temp_tuple1 -> 13;;
 
-
 len_DM -> temp_tuple2;;
 temp_tuple2 -> 7;;
