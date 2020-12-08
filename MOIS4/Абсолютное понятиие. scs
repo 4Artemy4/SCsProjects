@@ -38,11 +38,11 @@ sc_node_role_relation -> rrel_4;;
 <- rrel_key_sc_element: ... (*
     <- explanation;;
     => nrel_main_idtf:
-      [Утв.(жанр музыки, музыкальная форма, музыкальный стиль)] (* <- lang_ru;; *);;
+      [Утв.(Расписание дел, в котором ни одно из дел не зависит от предыдущих называется свободным расписанием дел)] (* <- lang_ru;; *);;
     => nrel_using_constants: {
        concept_free_schedule
        };; 
-  *);;
+*);;
 
 
 
