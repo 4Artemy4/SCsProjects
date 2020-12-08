@@ -35,12 +35,9 @@ nrel_value -> (temp_tuple3=>17_conventional_unit);;
 nrel_crossover -> (temp_tuple4=>temp_const_node1);;
 nrel_conventional_unit -> (temp_tuple3 -> 17);;
 
-rrel_limiting_point -> (AC->C;A); (AM->A;M); (MC->C;M); (DM->M;D); (MK->M;K); (DK->D;K) (AK->A;K);;
+rrel_limiting_point -> (AC->C); (AC->A); (AM->A); (AM->M); (MC->C); (MC->M); (DM->M); (DM->D); (MK->M); (MK->K); (DK->D); (DK->K); (AK->K); (AK->A);;
 
-rhombusABCD => rrel_vertex: A; B; C; D;;
-rhombusABCD => nrel_side:BC;;
-rhombusABCD => nrel_height: DK;;
-rhombusABCD => nrel_diagonal: AC;;
+rhombusABCD => rrel_vertex:A; B; C; D; nrel_side:BC; nrel_height: DK; nrel_diagonal: AC;;
 rhombusABCD -> K;M;;
 
 temp_const_node1 -> K;;
