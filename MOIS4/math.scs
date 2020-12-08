@@ -37,8 +37,8 @@ nrel_conventional_unit -> (temp_tuple3 -> 17);;
 
 rrel_limiting_point -> (AC->C;A); (AM->A;M); (MC->C;M); (DM->M;D); (MK->M;K); (DK->D;K) (AK->A;K);;
 
-rhombus(A,B,C,D) => rrel_vertex:A; B; C; D; nrel_side:BC; nrel_height: DK; nrel_diagonal: AC;;
-rhombus(A,B,C,D) -> K;M;;
+rhombusABCD => rrel_vertex:A; B; C; D; nrel_side:BC; nrel_height: DK; nrel_diagonal: AC;;
+rhombusABCD -> K;M;;
 
 temp_const_node1 -> K;;
 temp_tuple4 -> BC; DK;;
