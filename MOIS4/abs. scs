@@ -1,5 +1,4 @@
 sc_node_not_relation -> concept_task_list;;
-sc_node_not_relation -> concept_schedule;;
 sc_node_not_relation -> concept_free_schedule;;
 sc_node_not_relation -> concept_task;;
 
@@ -12,6 +11,8 @@ sc_node_role_relation -> rrel_2;;
 sc_node_role_relation -> rrel_3;;
 sc_node_role_relation -> rrel_4;;
 
+
+concept_shedule <- sc_node_not_relation;
 
 => nrel_main_idtf: 
  	[расписание дел*](*<-lang_ru;;*);
