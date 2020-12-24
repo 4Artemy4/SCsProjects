@@ -1,4 +1,4 @@
-math = [
+math = [*
 
 sc_node_not_relation -> concept_point;;
 sc_node_not_relation -> concept_section;;
@@ -51,7 +51,7 @@ concept_radius => ray;;
 
 nrel_bigger->(AC=>AD);;
 
-nrel_length(AC=>32_conventional_unit);;
+nrel_length->(AC=>32_conventional_unit);;
 
 AD->A;C;;
 AC->A;C;;
@@ -60,4 +60,4 @@ nrel_value->(tuple5=>32);;
 
 rrel_conventional_unit->(tuple5->32);;
 
-]
+*];;

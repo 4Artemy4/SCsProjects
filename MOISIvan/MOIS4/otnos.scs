@@ -44,7 +44,7 @@ nrel_concurrence <- sc_node_norole_relation;
   *);
 
 
-=> nrel_first_domain: concept_section;;
+=> nrel_first_domain: concept_section;
 => nrel_second_domain: concept_section;;
 
 nrel_concurrence =>nrel_definitional_domain:...
