@@ -1,0 +1,63 @@
+math = [
+
+sc_node_not_relation -> concept_point;;
+sc_node_not_relation -> concept_section;;
+sc_node_not_relation -> concept_number;;
+sc_node_not_relation -> concept_circle;;
+sc_node_not_relation -> concept_searched_number;;
+
+
+sc_node_norole_relation -> nrel_multiplication;;
+sc_node_norole_relation -> nrel_length;;
+sc_node_norole_relation -> nrel_value;;
+sc_node_norole_relation -> nrel_crossover;;
+sc_node_norole_relation -> nrel_bigger;;
+sc_node_norole_relation -> nrel_conventional_unit;;
+
+sc_node_role_relation -> rrel_conventional_unit;;
+
+concept_point -> A; C; D; O; R; B;;
+concept_section -> AC; AD; AO; AB; OR;;
+concept_number -> 16; 5; 32;;
+
+concept_circle -> temp1;;
+nrel_radius -> (temp1=>OR);;
+nrel_center -> (temp1=>O);;
+nrel_tangential -> (temp1=>O);;
+nrel_secant -> (temp1=>temp2);;
+temp1 -|> A;;
+
+OR -> O; R;;
+nrel_length -> (OR=>temp3); (AO=>5_conventional_unit); (AB=>16_conventional_unit);;
+temp3 -> concept_searched_number;;
+AO -> O; temp2;;
+AB->A;B;;
+ray->A;B;;
+
+nrel_value -> (tuple1=>temp3); (temp2=>16_conventional_unit);;
+rrel_conventional_unit -> (tuple1->5); (tuple2->16);;
+
+nrel_crossover->(tuple3=>D); (tuple4=>C);;
+tuple4->temp1;;
+tuple3->temp1;;
+
+tuple4->temp2;;
+tuple3->temp2;;
+
+temp2->A;;
+
+concept_radius => OR;;
+concept_radius => ray;;
+
+nrel_bigger->(AC=>AD);;
+
+nrel_length(AC=>32_conventional_unit);;
+
+AD->A;C;;
+AC->A;C;;
+
+nrel_value->(tuple5=>32);;
+
+rrel_conventional_unit->(tuple5->32);;
+
+]

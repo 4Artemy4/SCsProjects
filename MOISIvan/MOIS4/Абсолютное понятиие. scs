@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_point;;
+sc_node_not_relation -> concept_figure;;
+
+sc_node_norole_relation -> nrel_inclusion;;
+
+=> nrel_main_idtf: 
+ 	[Эллипс*](*<-lang_ru;;*);
+	[Ellipse*] (*<-lang_en;;*);
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Эллипс)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+		concept_point;
+    concept_figure
+	};; 
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Эллипс -  геометрическое место точек M евклидовой плоскости, для которых сумма расстояний до двух данных точек (называемых фокусами) постоянна и больше расстояния между фокусами] (* <- lang_ru;; *);;
+    *);;
+
+   *);
+
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Эллипс, большая и малая полуоси которых равны называется окружность)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+       concept_circle;;
+  };; 
+
+
+
+nrel_inclusion -> (concept_figure=>concept_ellipse);;
+
+
+concept_point->a; O; b;;
+nrel_large_exle->(ellipse=>a);;
+nrel_smaller_exle->(ellipse=>b);;
+
